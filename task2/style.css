@@ -1,20 +1,130 @@
+body {
+    margin: 0;
+}
+
+
+/* topnav */
 .topnav {
     display: flex;
+    border-bottom: 1px solid rgb(229, 231, 234);
+    font-size: 18px;
+}
+
+.topnav a {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
 }
 
 .topnav-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    background: lightgray;
+    width: 60px;
+    height: 60px;
+    border-right: 1px solid rgb(229, 231, 234);
 }
+
+.topnav-item:hover {
+    background-color: rgb(21, 164, 250);
+    color: #fff;
+}
+
 .topnav-item span {
     cursor: pointer;
-    font-size: 20px;
     font-weight: bold;
 }
+
+
+
+/* sidenav */
+#sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: #354052;
+    transition: 0.5s;
+    overflow-x: hidden;
+    color: #a0abbf;
+}
+
+#sidenav a {
+    padding: 8px;
+    text-decoration: none;
+    color: #a0abbf;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidenav a:hover {
+    color: #f1f1f1;
+}
+
+#sidenav .closebtn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    right: 0;
+    font-size: 36px;
+}
+
+main {
+    transition: margin-left .5s;
+}
+
+.sidenav-item {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px;
+    font-weight: 700;
+}
+
+.sidenav-item ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav-item li {
+    padding: 10px 30px;
+    list-style: none;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.sidenav-item li i {
+    width: 25px;
+}
+
+.sidenav-item li:active {
+    border-left: 4px solid #15a4fa;
+    background-color: #2f3949;
+    color: #fff;
+}
+
+.sidenav-item.user {
+    align-items: center;
+}
+
+.sidenav-item:not(:last-child) {
+    border-bottom: 1px solid #293241;
+}
+
+.sidenav-item .avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.sidenav-title {
+    padding: 0px 30px;
+    color: #65748d;
+}
+
 
 
 /* search */
@@ -24,22 +134,21 @@
     flex-grow: 1;
 }
 
+.search-form input:focus {
+    outline: 0;
+}
+
 .search-field {
     width: 100%;
     padding: 10px 15px;
     border: none;
-    border-radius: 100px;
-    outline: 1px solid #D0CFCE;
+    border-right: 1px solid rgb(229, 231, 234);
 }
 
 .search-button {
     background: transparent;
     border: none;
     outline: none;
-    margin-left: -35px;
-}
-
-.search-button img {
-    width: 20px;
-    height: 20px;
+    padding: 0px 0px 0px 15px;
+    font-size: 18px;
 }
