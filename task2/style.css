@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background-color: #ecf2f6;
 }
 
 .color-light {
@@ -19,6 +20,7 @@ body {
     display: flex;
     border-bottom: 1px solid rgb(229, 231, 234);
     font-size: 18px;
+    background-color: #fff;
 }
 
 .topnav a {
@@ -115,6 +117,7 @@ main {
     background-color: #2f3949;
     color: #fff;
 }
+
 .sidenav-item li:hover {
     background-color: #2f3949;
     color: #fff;
@@ -174,8 +177,10 @@ main {
 
 .info {
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: space-between;
-    margin: 40px;
+    padding: 40px;
 }
 
 #info-title {
@@ -185,6 +190,7 @@ main {
 
 .info-block {
     border-bottom: 1px #d8dfe5 solid;
+    background-color: #fff;
 }
 
 .info-text {
@@ -206,6 +212,7 @@ main {
 
 .info-operation {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -218,7 +225,7 @@ main {
     height: 40px;
     width: 40px;
     display: flex;
-    border: 1px #d2dae2 solid;
+    border: 1px #d8dfe5 solid;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -234,12 +241,13 @@ main {
 
 .info-nav {
     display: flex;
+    flex-wrap: wrap;
     font-weight: 700;
 }
 
 .info-nav-item {
     margin-left: 40px;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 .info-nav-item.active {
@@ -257,19 +265,30 @@ main {
     text-decoration: none;
 }
 
+/* content */
+
+.content {
+    padding: 40px;
+}
 
 
 /* charts */
 
-.content {
-    margin: 40px;
+.content-charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px #d8dfe5 solid;
 }
 
 .charts {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 40px;
-    border-bottom: 1px #d2dae2 solid;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
 }
 
 .gistogram {
@@ -284,7 +303,7 @@ main {
 
 .circle-bg {
     fill: none;
-    stroke: #eee;
+    stroke: #d9e4eb;
     stroke-width: 3.8;
 }
 
@@ -328,4 +347,150 @@ main {
     fill: #8a95a5;
     font-size: 0.2em;
     text-transform: uppercase;
+}
+
+
+
+/* description & links */
+
+.content-dual {
+    display: flex;
+    gap: 40px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.links .social {
+    width: 250px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.facebook {
+    background-color: #4d74c4;
+}
+
+.facebook:active {
+    background-color: #426ec0;
+}
+
+.twitter {
+    background-color: #00aaef;
+}
+
+.twitter:active {
+    background-color: #426ec0;
+}
+
+.linkedin {
+    background-color: #0384be;
+}
+
+.linkedin:active {
+    background-color: #426ec0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+@media (max-width: 979px) {
+    .content-dual {
+        flex-wrap: wrap;
+    }
+}
+
+table thead {
+    background-color: #6f7d95;
+    color: #fff;
+}
+
+table tbody {
+    background-color: #fff;
+    color: #78889f;
+}
+
+table tr {
+    border-bottom: 2px #eef2f5 solid;
+}
+
+table th {
+    width: 160px;
+    height: 70px;
+    text-align: left;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+.table-edit {
+    padding: 5px 20px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #7c8ba6;
+    border-radius: 2px;
+    border: none;
+}
+
+.table-edit:hover {
+    background-color: #7888a3;
+}
+
+.table-edit:active {
+    background-color: #7f8ea7;
+}
+
+table td {
+    padding: 30px;
+}
+
+
+.copy-block {
+    width: 250px;
+}
+
+.links .copy-block h2 {
+    color: #596679;
+}
+
+.links .copy-block p {
+    color: #818b9a;
+}
+
+.copy-block:not(:last-child) {
+    padding-bottom: 30px;
+    border-bottom: 1px #d8dfe5 solid;
+}
+
+.copy-link {
+    display: flex;
+    width: 250px;
+}
+
+.copy-link input {
+    padding: 0 10px;
+    border: none;
+    flex-grow: 1;
+}
+
+.copy-link button {
+    background-color: #47bac1;
+    height: 40px;
+    color: #fff;
+    border: none;
+    padding: 0px 10px;
+}
+
+.copy-link button:active {
+    background: #cccccc;
+}
+
+.copy-link input:focus {
+    outline: 0;
 }
