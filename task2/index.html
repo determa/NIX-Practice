@@ -31,7 +31,7 @@
                 <li><i class="fas fa-user-friends"></i>USERS</li>
                 <li><i class="fas fa-map-marker-alt"></i>LOCATIONS</li>
                 <li><i class="fas fa-sitemap"></i>WORKFLOWS</li>
-                <li><i class="fas fa-book"></i>JOB BOARDS</li>
+                <li class="active"><i class="fas fa-book"></i>JOB BOARDS</li>
                 <li><i class="fas fa-share-alt"></i>SOCIAL</li>
             </ul>
         </div>
@@ -62,18 +62,80 @@
             <a href="#" class="topnav-item"><i class="fas fa-th"></i></a>
         </nav>
 
-        <div class="info">
-            <h2>Customer Service Representative</h2>
-            <span><i class="fas fa-map-marker-alt"></i>San Francisco, CA &#8226; <a href="#">Preview this post</a></span>
-        </div>
-        <div class="charts">
+        <div class="info-block">
+            <div class="info">
+                <div class="info-text">
+                    <span id="info-title">Customer Service Representative</span>
+                    <span class="color-light">
+                        <i class="fas fa-map-marker-alt"></i>San Francisco, CA &#8226; <a href="#">Preview this post</a>
+                    </span>
+                </div>
+                <div class="info-operation">
+                    <div class="info-item upper">
+                        <div class="mini-circle"></div>Open
+                    </div>
+                    <div class="info-item"><i class="fas fa-bookmark"></i></div>
+                    <div class="info-item"><i class="fas fa-pen"></i></div>
+                    <div class="info-item"><i class="fas fa-trash-alt"></i></div>
+                </div>
+            </div>
 
+            <div class="info-nav upper color-light">
+                <a href="#" class="info-nav-item active">summary</a>
+                <a href="#" class="info-nav-item">aplicants</a>
+                <a href="#" class="info-nav-item">job board</a>
+                <a href="#" class="info-nav-item">interviews</a>
+                <a href="#" class="info-nav-item">activity</a>
+                <a href="#" class="info-nav-item">broadcast</a>
+                <a href="#" class="info-nav-item">notifications</a>
+            </div>
         </div>
+        <div class="content">
+            <div class="charts">
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart green">
+                        <path class="circle-bg" d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        <text x="18" y="17" class="circle-data">3,124</text>
+                        <text x="18" y="23" class="circle-title">applicants</text>
+                    </svg>
+                </div>
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+                        <path class="circle-bg" d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        <path class="circle" stroke-dasharray="40, 100" d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        <text x="18" y="17" class="circle-data">1,546</text>
+                        <text x="18" y="23" class="circle-title">interviews</text>
+                    </svg>
+                </div>
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+                        <path class="circle-bg" d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        <text x="18" y="17" class="circle-data">912</text>
+                        <text x="18" y="23" class="circle-title">forwards</text>
+                    </svg>
+                </div>
+                <div class="gistogram"></div>
+            </div>
+        </div>
+
 
     </main>
 
     <script>
-
         function openNav() {
             document.getElementById("sidenav").style.width = "250px";
             document.getElementsByTagName("main")[0].style.marginLeft = "250px";
