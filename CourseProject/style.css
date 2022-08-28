@@ -572,7 +572,6 @@ footer .item .mail {
 
 .also-buy .items {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
 }
 
