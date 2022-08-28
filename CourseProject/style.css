@@ -558,6 +558,7 @@ footer .item .mail {
 
 .also-buy .content {
     flex-grow: 1;
+    width: 100%;
 }
 
 .also-buy .fa-angle-left {
@@ -573,6 +574,7 @@ footer .item .mail {
 .also-buy .items {
     display: flex;
     gap: 30px;
+    overflow: hidden;
 }
 
 .also-buy .item {
