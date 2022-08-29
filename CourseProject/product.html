@@ -10,6 +10,15 @@
 </head>
 
 <body>
+    <div class="modal">
+        <div class="modal__cross" onclick="modal_hide()">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="content"></div>
+    </div>
+    <!-- Подложка под модальным окном -->
+    <div class="overlay"></div>
+
     <header>
         <div class="header-info">
             <div class="logo">
@@ -30,7 +39,7 @@
                 </div>
             </div>
             <div class="item">
-                <button id="order">Оставить заявку</button>
+                <button id="order" onclick="modal_show()">Оставить заявку</button>
             </div>
         </div>
 
@@ -90,7 +99,7 @@
                     высококачественный прототип будущего проекта говорит о возможностях системы массового участия</p>
                 <h3>Цена:</h3>
                 <span class="price">25 000 &dollar;</span>
-                <button class="buy">Заказать</button>
+                <button class="buy" onclick="modal_show()">Заказать</button>
             </div>
         </div>
 
@@ -193,7 +202,7 @@
             </div>
             <div class="item">
                 <nav>
-                    <a href="#">Главная</a>
+                    <a href="index.html">Главная</a>
                     <a href="#">Каталог</a>
                     <a href="#">Производство</a>
                     <a href="#">Оплата и доставка</a>
@@ -254,6 +263,7 @@
             </div>`;
         });
     </script>
+    <script src="./popup.js"></script>
 </body>
 
 </html>
