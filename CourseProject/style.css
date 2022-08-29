@@ -36,29 +36,6 @@ a {
 }
 
 /* header */
-header nav {
-    display: flex;
-    padding: 0 130px;
-    border: 1px solid #E5E5E5;
-    border-width: 1px 0;
-}
-
-header nav a:nth-child(1) {
-    border-left: 1px solid #E5E5E5;
-}
-
-header nav a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    border-right: 1px solid #E5E5E5;
-    width: calc(100% / 6);
-    padding: 0px 15px;
-    gap: 15px;
-    white-space: nowrap;
-}
-
 .logo {
     flex-grow: 1;
 }
@@ -112,17 +89,72 @@ header nav a {
     border: 1px solid #28292D;
 }
 
+/* navigation */
+header nav>ul {
+    display: flex;
+    padding: 0 130px;
+    border: 1px solid #E5E5E5;
+    border-width: 1px 0;
+    position: relative;
+}
 
+header nav>ul>li:nth-child(1) {
+    border-left: 1px solid #E5E5E5;
+}
+
+header nav ul li {
+    height: 70px;
+    white-space: nowrap;
+    list-style: none;
+}
+
+header nav ul li:hover>a {
+    color: #F39B14;
+}
+
+header nav>ul>li {
+    border-right: 1px solid #E5E5E5;
+    width: calc(100% / 6);
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+header nav ul ul li {
+    position: relative;
+}
+
+header nav ul ul li>a {
+    background: #FFFFFF;
+    color: #28292D;
+    border: 1px solid #E5E5E5;
+}
+
+header nav ul ul {
+    display: none;
+    padding: 0;
+    top: 100%;
+}
+
+header nav ul li:hover>ul {
+    display: block;
+}
 
 /* main */
-main {
+main,
+.main {
     padding: 50px 130px 90px;
     display: flex;
     gap: 90px;
     flex-direction: column;
 }
 
-main > div:nth-child(2) {
+main>div:nth-child(2) {
     margin-top: -40px;
 }
 
